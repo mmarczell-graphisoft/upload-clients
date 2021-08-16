@@ -5,7 +5,7 @@ buildscript {
 }
 
 plugins {
-    id 'java'
+    id 'application'
     id 'maven-publish'
     id 'com.jfrog.bintray' version '1.7'
     id 'com.github.johnrengelman.shadow' version '1.2.4'
@@ -66,3 +66,5 @@ bintray {
 
     }
 }
+
+mainClassName = 'com.flurry.proguard.UploadMapping'
